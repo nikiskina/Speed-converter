@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js" defer></script>
+    <title>Wind speed converter</title>
+</head>
+
+<body>
+    <div class="converter">
+        <div class="formBox">
+            <input class="windSpeed" type="number" placeholder="Enter a wind speed" min="0"><br>
+            <h2 class="input">Choose unit:</h2>
+            <input type="radio" id="knots" name="unit">
+            <label for="knots">knots</label><br>
+            <input type="radio" id="ms" name="unit">
+            <label for="ms">m/s</label><br>
+            <input type="radio" id="kmh" name="unit">
+            <label for="kmh">km/h</label><br>
+        </div>
+        <div class="resultBox">
+            <button class="convert">Convert</button>
+            <div class="knots">knots</div>
+            <div class="ms">m/s</div>
+            <div class="kmH">km/h</div>
+        </div>
+    </div>
+
+    <div class="alert">
+        <span>Are you sure about that?</span>
+         <br> <br> The maximum ever recorded wind gust of 113.3 m/s (408 km/h; 220.2 knots) was  registered  on 10 April 1996 (Barrow Island, Australia).
+    </div>
+</body>
+
+</html>
